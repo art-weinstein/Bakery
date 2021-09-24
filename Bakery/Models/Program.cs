@@ -8,8 +8,17 @@ namespace Bakery.Models
   {
     public static void Main()
     {
-      BreadTotal();
+      // BreadTotal();
+      Console.WriteLine("Welcome to our famous family owned bakery!");
+      Console.WriteLine("Place your order here!");
+      string userInput = Console.ReadLine();
+      int breadTotal = int.Parse(userInput);
+      FreshBread.BreadCost(breadTotal);
+      Console.WriteLine(FreshBread.BreadPrice);
     }
+  }
+}
+
 
 //   public static void BreadTotal()
 //     {
@@ -28,16 +37,15 @@ namespace Bakery.Models
 //   }
 // }
 
- public static void BreadTotal()
-    {
-      Console.WriteLine("Welcome to our famous family owned bakery!");
-      Console.WriteLine("Place your order here!");
-      string userInput = Console.ReadLine();
-      int breadTotal = int.Parse(userInput);
-      FreshBread.BreadCost(breadTotal);
-      Console.WriteLine(FreshBread.BreadPrice);
-      // Console.WriteLine(breadTotal + " loaves of bread added to cart!");
-    }
-  }
-}
+//  public static void BreadTotal()
+//     {
+//       Console.WriteLine("Welcome to our famous family owned bakery!");
+//       Console.WriteLine("Place your order here!");
+//       string userInput = Console.ReadLine();
+//       int breadTotal = int.Parse(userInput);
+//       FreshBread.BreadCost(breadTotal);
+//       Console.WriteLine(FreshBread.BreadPrice);
+//     }
+//   }
+// }
 
