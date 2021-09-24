@@ -16,13 +16,13 @@ namespace Bakery.Models
       // # this.BreadAmount = loaves;
       int loafPrice = loaves * 5;
 
-      if (BreadAmount >= 3)
+      if (loaves >= 3)
       {
         int GroupedLoaves = (loaves / 3);
         int IndividualLoaves = (loaves % 3);
         BreadPrice = (GroupedLoaves * 10) + (IndividualLoaves * 5);
       }
-      return loafPrice;
+      return BreadPrice;
       
       }
   }

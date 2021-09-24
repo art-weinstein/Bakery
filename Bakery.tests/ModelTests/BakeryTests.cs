@@ -19,7 +19,7 @@ namespace Bakery.Models
     {
       Bread bread = new Bread();
       bread.BreadPrice = 5;
-      Assert.AreEqual(2, bread.calculateLoafCost(5));
+      Assert.AreEqual(20, bread.calculateLoafCost(5));
 
     }
   }

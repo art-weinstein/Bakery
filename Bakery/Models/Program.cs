@@ -14,8 +14,8 @@ namespace Bakery.Models
       Console.WriteLine("Place your order here!");
       string userInput = Console.ReadLine();
       int breadTotal = int.Parse(userInput);
-      bread.calculateLoafCost(breadTotal);
-      Console.WriteLine(bread.BreadPrice);
+      // bread.calculateLoafCost(breadTotal);
+      Console.WriteLine(bread.calculateLoafCost(breadTotal));
     }
   }
 }
