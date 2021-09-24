@@ -7,21 +7,22 @@ namespace Bakery.Models
 {
   public class FreshBread
   {
-    public string Bread {get; set; }
-    // private static Order<FreshBread> _instances = new Order<FreshBread> {};
 
-    public FreshBread(int bread)
+    public int Price { get; set; }
+    public static List<FreshBread> _order = new List<FreshBread> {};
+    
+    public FreshBread(int price)
     {
-      Bread = bread.ToString();
+      Price = 5;
+      _order.Add(this);
     }
-  //   public static int BreadPrice(string userInput)
-  //   {
-  //     if (userInput = bread)
-  //     {
-  //     int price = 5;
-  //     string finalPrice = price.ToString();
-  //     return finalPrice;
-  //     }
-  //   }
-  } 
+    public static List<FreshBread> GetAll()
+    {
+      return _order;
+    }
+  public static void ClearAll()
+      {
+        _order.Clear();
+      }
+  }
 }
