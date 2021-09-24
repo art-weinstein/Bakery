@@ -9,19 +9,17 @@ namespace Bakery.Models
   public class BakeryTests
   {
     [TestMethod]
-    public void FreshBreadConstructor_CreatesInstanceOfFreshBread_FreshBread()
+    public void BreadConstructor_CreatesInstanceOfBread_Bread()
     {
-      FreshBread newFreshBread = new FreshBread();
-      Assert.AreEqual(typeof(FreshBread), newFreshBread.GetType());
+      Bread newFreshBread = new Bread();
+      Assert.AreEqual(typeof(Bread), newFreshBread.GetType());
     }
     [TestMethod]
-    public void FreshBreadPriceCheck_CalculateBreadCost_FreshBread()
+    public void BreadPriceCheck_CalculateLoafCost_FreshBread()
     {
-      FreshBread newFreshBread = new FreshBread();
-      int loaves = 2;
-      FreshBread.BreadCost(loaves);
-      // FreshBread.BreadCost(loaves);
-      Assert.AreEqual(10, FreshBread.BreadCost(loaves));
+      Bread bread = new Bread();
+      bread.BreadPrice = 5;
+      Assert.AreEqual(2, bread.calculateLoafCost(5));
 
     }
   }

@@ -5,16 +5,16 @@ using System;
 
 namespace Bakery.Models
 {
-  public class FreshBread
+  public class Bread
   {
-    public static int BreadPrice { get; set; }
-    public static int BreadAmount { get; set; }
-    public static int BreadTotal { get; set; }
+    public int BreadPrice { get; set; }
+    public int BreadAmount { get; set; }
+    public int BreadTotal { get; set; }
 
-    public static void BreadCost(int loaves)
+    public int calculateLoafCost(int loaves)
     {
-      BreadAmount = loaves;
-      BreadPrice = loaves * 5;
+      // # this.BreadAmount = loaves;
+      int loafPrice = loaves * 5;
 
       if (BreadAmount >= 3)
       {
@@ -22,6 +22,8 @@ namespace Bakery.Models
         int IndividualLoaves = (loaves % 3);
         BreadPrice = (GroupedLoaves * 10) + (IndividualLoaves * 5);
       }
+      return loafPrice;
+      
       }
   }
 }
