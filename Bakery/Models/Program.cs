@@ -11,7 +11,8 @@ namespace Bakery.Models
       System.Console.WriteLine("Welcome to our famous family owned bakery!");
       System.Console.WriteLine("Place your order here!");
       string userInput = Console.ReadLine();
-      // string output = Convert.TranslateNumber(userInput);
+      int breadTotal = int.Parse(userInput);
+      // string output = FreshBread.BreadPrice();
 
       // System.Console.WriteLine(output);
     }

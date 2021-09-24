@@ -12,7 +12,7 @@ namespace Bakery.Models
     [TestMethod]
     public void FreshBreadConstructor_CreatesInstanceOfFreshBread_FreshBread()
     {
-      FreshBread newFreshBread = new FreshBread("This");
+      FreshBread newFreshBread = new FreshBread(5);
       Assert.AreEqual(typeof(FreshBread), newFreshBread.GetType());
     }
   }
