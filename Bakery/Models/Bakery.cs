@@ -3,26 +3,46 @@ using Bakery.Models;
 using System;
 
 
-namespace Bakery.Models
-{
+namespace Bakery.Models{
+// {
   public class FreshBread
   {
-
-    public int Price { get; set; }
-    public static List<FreshBread> _order = new List<FreshBread> {};
+//   {
+//     public int BreadAmount {get; set; }
+//     public int BreadTotal {get; set; }
+//     public int BreadPrice { get; set; }
+//     public static List<FreshBread> _order = new List<FreshBread> {};
     
-    public FreshBread(int price)
+//     public FreshBread(int breadTotal)
+//     {
+//       BreadTotal = breadTotal;
+//       _order.Add(this);
+//     }
+//     public static List<FreshBread> GetAll()
+//     {
+//       return _order;
+//     }
+//   public static void ClearAll()
+//       {
+//         _order.Clear();
+//       }
+//   public int BreadCost(int breadAmount)
+//     {
+//     BreadAmount = breadAmount;  
+//     BreadTotal = (breadAmount * 5);
+//     return BreadTotal;
+//     }
+//   }
+// }  {
+    public static int BreadPrice { get; set; }
+    public static int BreadAmount { get; set; }
+    public static int BreadTotal { get; set; }
+
+    public static void BreadCost(int loaves)
     {
-      Price = 5;
-      _order.Add(this);
-    }
-    public static List<FreshBread> GetAll()
-    {
-      return _order;
-    }
-  public static void ClearAll()
-      {
-        _order.Clear();
+      BreadAmount = loaves;
+      BreadPrice = loaves * 5;
       }
+    }
   }
-}
+
