@@ -8,23 +8,33 @@ namespace Bakery.Models
   public class Bread
   {
     public int BreadPrice { get; set; }
-    public int BreadAmount { get; set; }
-    public int BreadTotal { get; set; }
 
     public int calculateLoafCost(int loaves)
     {
-      // # this.BreadAmount = loaves;
       int loafPrice = loaves * 5;
 
       if (loaves >= 3)
       {
-        int GroupedLoaves = (loaves / 3);
-        int IndividualLoaves = (loaves % 3);
-        BreadPrice = (GroupedLoaves * 10) + (IndividualLoaves * 5);
+        int loafBundle = (loaves / 3);
+        int singleLoaf = (loaves % 3);
+        BreadPrice = (loafBundle * 10) + (singleLoaf * 5);
       }
-      return BreadPrice;
-      
+      return BreadPrice;  
+    }
+  }
+  public class Pastry
+  {
+    public int PastryPrice { get; set; }
+
+    public int calculatePastryCost(int pastries){
+      int pastryPrice = pastries *2;
+      if (pastries >= 3)
+      {
+        int pastryBundle = (pastries / 3);
+        int singlePastry = (pastries % 3);
+        PastryPrice = (pastryBundle * 5) + (singlePastry * 2);
       }
+      return PastryPrice;
+    }
   }
 }
-
