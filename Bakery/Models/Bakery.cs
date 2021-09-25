@@ -12,7 +12,9 @@ namespace Bakery.Models
     public int calculateLoafCost(int loaves)
     {
       int loafPrice = loaves * 5;
-
+      if (loaves < 3){
+        BreadPrice += loafPrice;
+      }
       if (loaves >= 3)
       {
         int loafBundle = (loaves / 3);

@@ -26,7 +26,7 @@ namespace Bakery.Models
     {
       Pastry pastry = new Pastry();
       pastry.PastryPrice = 2;
-      Assert.AreEqual(4, pastry.calculatePastryCost(2));
+      Assert.AreEqual(9, pastry.calculatePastryCost(5));
     }
   }
 }
