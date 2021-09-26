@@ -28,8 +28,6 @@ namespace Bakery.Models
       Console.WriteLine("The cost of " + userInput + " loaves is $" + breadTotal + " and the cost of " + userInput2 + " pastries is $" + pastryTotal + ".");
       Console.WriteLine("------------------------------------");
       Console.WriteLine("Your grand total is $" + (breadTotal + pastryTotal) + ". Thank you!");
-
-
     }
   }
 }
