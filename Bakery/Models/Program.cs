@@ -20,10 +20,16 @@ namespace Bakery.Models
       Console.WriteLine("How many loaves would you like?");
       string userInput = Console.ReadLine();
       int breadTotal = int.Parse(userInput);
+      int breadCost = bread.calculateLoafCost(breadTotal);
       Console.WriteLine("How many Pastries would you like?");
       string userInput2 = Console.ReadLine();
       int pastryTotal = int.Parse(userInput2);
-      Console.WriteLine("The total cost of " + userInput + " loaves is $" + bread.calculateLoafCost(breadTotal) + "and the total cost of " + userInput2 + " pastries is $" + pastry.calculatePastryCost(pastryTotal) + ".");
+      int pastryCost = pastry.calculatePastryCost(pastryTotal);
+      Console.WriteLine("The total cost of " + userInput + " loaves is $" + breadCost + " and the total cost of " + userInput2 + " pastries is $" + pastryCost + ".");
+      Console.WriteLine("------------------------------------");
+      Console.WriteLine("Your grand total is " + (breadCost + pastryCost) + ". Thank you!");
+
+
     }
   }
 }
