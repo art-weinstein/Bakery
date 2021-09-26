@@ -19,15 +19,15 @@ namespace Bakery.Models
       Console.WriteLine("------------------------------------");
       Console.WriteLine("How many loaves would you like?");
       string userInput = Console.ReadLine();
-      int breadTotal = int.Parse(userInput);
-      int breadCost = bread.calculateLoafCost(breadTotal);
+      int breadCost = int.Parse(userInput);
+      int breadTotal = bread.calculateLoafCost(breadCost);
       Console.WriteLine("How many Pastries would you like?");
       string userInput2 = Console.ReadLine();
-      int pastryTotal = int.Parse(userInput2);
-      int pastryCost = pastry.calculatePastryCost(pastryTotal);
-      Console.WriteLine("The total cost of " + userInput + " loaves is $" + breadCost + " and the total cost of " + userInput2 + " pastries is $" + pastryCost + ".");
+      int pastryCost = int.Parse(userInput2);
+      int pastryTotal = pastry.calculatePastryCost(pastryCost);
+      Console.WriteLine("The cost of " + userInput + " loaves is $" + breadTotal + " and the cost of " + userInput2 + " pastries is $" + pastryTotal + ".");
       Console.WriteLine("------------------------------------");
-      Console.WriteLine("Your grand total is " + (breadCost + pastryCost) + ". Thank you!");
+      Console.WriteLine("Your grand total is $" + (breadTotal + pastryTotal) + ". Thank you!");
 
 
     }
