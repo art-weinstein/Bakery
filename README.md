@@ -11,7 +11,7 @@
 
 # Description
 
-This application was created as a part of a C# Epicodus independent project. The application makes use of object-oriented programming an auto-implemented properites to determine the price of an order. Bread costs $5.00 with every third loaf being free, and pastries costing $2.00 with a $3.00 for five option. The application opens a prompt in the console with a welcome message,followed by a prompt to order bread and then pastries. The application will then return the costs of each individual item(s), and then the  total.  
+This application was created as a part of a C# Epicodus independent project. The application makes use of object-oriented programming an auto-implemented properites to determine the price of an order. Bread costs $5.00 with every third loaf free, and pastries cost $2.00 with a $3.00 for five deal. The application opens a prompt in the console with a welcome message, followed by a prompt to order bread and then pastries. The application will display the costs of each individual item(s), and then the return the total.  
 
 # Setup/Installation Requirements
 
@@ -26,7 +26,7 @@ Open the new directory.
 3. Before running tests, type **dotnet restore** to obtain the necessary dependencies. 
 4. To run tests, type **dotnet test** and the console will return passing or failing tests. 
 
-## Runing the program
+## Running the program
 1. Navigate back to the root directory by typing **cd ..**
 2. Navigate to the Bakery directory by typing **cd Bakery**
 3. Type **dotnet run** to run the program and follow the prompts within the terminal. 
