@@ -30,6 +30,10 @@ namespace Bakery.Models
 
     public int calculatePastryCost(int pastries){
       int pastryPrice = pastries *2;
+      if (pastries < 3)
+      {
+        PastryPrice += pastryPrice;
+      }
       if (pastries >= 3)
       {
         int pastryBundle = (pastries / 3);
