@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery.Tests\\Bakery.Tests.csproj": {}
+    "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery.Tests\\Bakery.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery.Tests\\Bakery.Tests.csproj": {
+    "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery.Tests\\Bakery.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery.Tests\\Bakery.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery.Tests\\Bakery.Tests.csproj",
         "projectName": "Bakery.Tests",
-        "projectPath": "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery.Tests\\Bakery.Tests.csproj",
+        "projectPath": "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery.Tests\\Bakery.Tests.csproj",
         "packagesPath": "C:\\Users\\Art Weinstein\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery.Tests\\obj\\",
+        "outputPath": "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Art Weinstein\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery\\Bakery.csproj": {
-                "projectPath": "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery\\Bakery.csproj"
+              "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery\\Bakery.csproj": {
+                "projectPath": "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery\\Bakery.csproj"
               }
             }
           }
@@ -74,14 +74,14 @@
         }
       }
     },
-    "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery\\Bakery.csproj": {
+    "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery\\Bakery.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery\\Bakery.csproj",
+        "projectUniqueName": "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery\\Bakery.csproj",
         "projectName": "Bakery",
-        "projectPath": "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery\\Bakery.csproj",
+        "projectPath": "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery\\Bakery.csproj",
         "packagesPath": "C:\\Users\\Art Weinstein\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Art Weinstein\\Desktop\\Bakery.Solutions\\Bakery\\obj\\",
+        "outputPath": "C:\\Users\\Art Weinstein\\Desktop\\C#\\Bakery.Solutions\\Bakery\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Art Weinstein\\AppData\\Roaming\\NuGet\\NuGet.Config"
