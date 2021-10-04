@@ -13,7 +13,7 @@ namespace Bakery.Models
     {
       int loafPrice = loaves * 5;
       if (loaves < 3){
-        BreadPrice += loafPrice;
+        BreadPrice = loafPrice;
       }
       if (loaves >= 3)
       {

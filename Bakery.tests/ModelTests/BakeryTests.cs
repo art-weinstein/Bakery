@@ -21,6 +21,13 @@ namespace Bakery.Models
       Assert.AreEqual(typeof(Pastry), pastry.GetType());
     }
     [TestMethod]
+    public void BreadPriceCheck_CalculateLoafCostWithoutDiscount_Bread()
+    {
+      Bread bread = new Bread();
+      bread.BreadPrice = 5;
+      Assert.AreEqual(5, bread.calculateLoafCost(1));
+    }
+    [TestMethod]
     public void BreadPriceCheck_CalculateLoafCost_Bread()
     {
       Bread bread = new Bread();
