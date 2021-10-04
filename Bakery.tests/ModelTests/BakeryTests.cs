@@ -35,6 +35,13 @@ namespace Bakery.Models
       Assert.AreEqual(20, bread.calculateLoafCost(5));
     }
     [TestMethod]
+    public void PastryPriceCheck_CalculatePastryCostWithoutDiscount_Pastry()
+    {
+      Pastry pastry = new Pastry();
+      pastry.PastryPrice = 2;
+      Assert.AreEqual(2, pastry.calculatePastryCost(1));
+    }
+    [TestMethod]
     public void PastryPriceCheck_CalculatePastryCost_Pastry()
     {
       Pastry pastry = new Pastry();

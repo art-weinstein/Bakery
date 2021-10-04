@@ -32,7 +32,7 @@ namespace Bakery.Models
       int pastryPrice = pastries *2;
       if (pastries < 3)
       {
-        PastryPrice += pastryPrice;
+        PastryPrice = pastryPrice;
       }
       if (pastries >= 3)
       {
